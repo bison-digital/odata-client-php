@@ -7,6 +7,9 @@ It is using Guzzles implementation of PSR-7 Request internally but is compatible
 
 ![Latest Version](https://img.shields.io/packagist/v/bison-digital/odata-client-php)
 
+### Requirements
+- PHP ^8.1
+
 ### Install
 ```bash
 composer require bison-digital/odata-client-php
