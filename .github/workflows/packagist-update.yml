@@ -1,0 +1,20 @@
+name: Update Packagist
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update_packagist:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Update Packagist
+        env:
+          PACKAGIST_API_TOKEN: ${{ secrets.PACKAGIST_API_TOKEN }}
+        run: |
+          curl -XPOST -H "Content-Type: application/json" -H "Authorization: Bearer $PACKAGIST_API_TOKEN" https://packagist.org/api/update-package -d '{"repository":{"url":"https://github.com/bison-digital/odata-client-php"}}'
