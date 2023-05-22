@@ -1,0 +1,20 @@
+{
+    "name": "bison-digital/odata-client-php",
+    "description": "OData Client Library for PHP",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "BisonDigital\\Odata\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Zach Bimson",
+            "email": "zach@bison.digital"
+        }
+    ],
+    "require": {
+        "psr/http-client": "^1.0",
+        "guzzlehttp/psr7": "^2.5"
+    }
+}
