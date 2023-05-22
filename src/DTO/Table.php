@@ -4,7 +4,7 @@
 namespace BisonDigital\Odata\DTO;
 
 
-class OdataTable {
+class Table {
   protected ?string $updateKey = null;
 
   /**

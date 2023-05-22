@@ -1,6 +1,6 @@
 <?php
 
-namespace BisonDigital\Odata\Model;
+namespace BisonDigital\Odata\DTO;
 
 class OdataEntityId {
 

@@ -2,7 +2,7 @@
 
 namespace BisonDigital\Odata\DTO;
 
-use BisonDigital\Odata\Model\ParameterBag;
+use BisonDigital\Odata\DTO\ParameterBag;
 
 class Odata extends ParameterBag implements OdataInterface, \JsonSerializable {
 

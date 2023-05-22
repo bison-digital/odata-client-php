@@ -2,7 +2,7 @@
 
 namespace BisonDigital\Odata\DTO\Options\Expand;
 
-use BisonDigital\Odata\DTO\OdataQuery;
+use BisonDigital\Odata\DTO\Query;
 
 /**
  * Base class for the expand query options.
@@ -10,7 +10,7 @@ use BisonDigital\Odata\DTO\OdataQuery;
  * An extend is pretty much a sub query of the main query, since the same query
  * options are available within the expand option.
  */
-abstract class AbstractExpand extends OdataQuery implements ExpandInterface {
+abstract class AbstractExpand extends Query implements ExpandInterface {
 
   /**
    * {@inheritDoc}

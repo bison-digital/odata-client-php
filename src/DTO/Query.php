@@ -17,7 +17,7 @@ use BisonDigital\Odata\DTO\Options\Select\Select;
 /**
  * Odata query builder.
  */
-class OdataQuery {
+class Query {
 
   /**
    * @param \BisonDigital\Odata\DTO\Options\QueryOptionCollection $queryOptions
