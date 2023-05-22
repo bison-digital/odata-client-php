@@ -43,6 +43,6 @@ $oDataService->query(new Table('People'), $query);
 ```
 
 ## Issues
-Please report any issues using the [issues]('https://github.com/bison-digital/odata-client-php/issues') tab in this repository.
+Please report any issues using the [issues](https://github.com/bison-digital/odata-client-php/issues) tab in this repository.
 
 All pull requests and suggestions are welcome.
