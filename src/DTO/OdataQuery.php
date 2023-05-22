@@ -20,11 +20,12 @@ use BisonDigital\Odata\DTO\Options\Select\Select;
 class OdataQuery {
 
   /**
-   * Collection of query oData options for the query.
-   *
-   * @var \BisonDigital\Odata\DTO\Options\QueryOptionCollection
+   * @param \BisonDigital\Odata\DTO\Options\QueryOptionCollection $queryOptions
    */
-  protected QueryOptionCollection $queryOptions;
+  public function __construct(
+    protected QueryOptionCollection $queryOptions = new QueryOptionCollection()
+  ) {
+  }
 
   /**
    * Add a select query option.
@@ -195,11 +196,8 @@ class OdataQuery {
    * @return $this
    */
   protected function addQueryOption(QueryOptionInterface $option): self {
-    if (!$this->queryOptions) {
-      $this->queryOptions = new QueryOptionCollection();
-    }
-
     $this->queryOptions->addOption($option);
+
     return $this;
   }
 
