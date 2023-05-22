@@ -2,8 +2,8 @@
 
 Lightweight library designed to make calling OData REST services in PHP applications easy.
 
-The SDK is designed to around PSR 7 (Message) and 8 (Client) to allow for ultimate flexibility of implimentation.
-It is using Guzzles implementation of PSR-7 Request internally but is compatible with any PSR-8 Client.
+The SDK is designed to around PSR 7 (Message) and 18 (Client) to allow for ultimate flexibility of implimentation.
+It is using Guzzles implementation of PSR-7 Request internally but is compatible with any PSR-18 Client.
 
 ![Latest Version](https://img.shields.io/packagist/v/bison-digital/odata-client-php)
 
